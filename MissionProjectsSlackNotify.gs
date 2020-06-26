@@ -33,19 +33,15 @@ function getStudents() {
   for (let i = 0; i < data.length; i++) {
     let name = data[i][0];
     let email = data[i][1];
-    if (name != "" && email!="") {
+    if (name !== "" && email!=="") {
       for (let j = start; j < width; j++) {
         if (data[i][j] === "") {
-          // for testing
-          // Logger.log(name);
           studentList.push([name, email]);
           break;
         }
       }
     }
   }
-  // for testing
-  // Logger.log(studentList);
   return studentList;
 }
 
@@ -116,12 +112,43 @@ function sendSlackMessage(id){
   }
 }
 
+/**
+ * clears the spreadsheet
+ * @param {Object} sheet - the notified students Google sheet
+ */
+function clearSheet(sheet) {
+  let last = sheet.getLastRow();
+  if (last > 1) {
+    let start = 2;
+    let toClear = last-start+1;
+    sheet.deleteRows(start, toClear);
+  }
+}
 
 /**
- * sends messages to the all user on the mission table
+ * logs the names of all the people with column missing into a Google sheet
+ * @param {string} name - name of the student
+ * @param {string} email - email of the student
+ * @param {Object} sheet - the notified students Google sheet
+ */
+function notifiedStudents(name, email, sheet){
+  // append to the google sheet
+  let now = new Date();
+  now = Utilities.formatDate(now, 'America/Los_Angeles', 'MMMM dd, yyyy HH:mm:ss');
+  let row = [name, email, now];
+  sheet.appendRow(row);
+}
+
+/**
+ * sends messages to the all users on the mission table that have missing columns
  */
 function execute(){
+  const URL = 'https://docs.google.com/spreadsheets/d/1X6xv7s_kebQppKxPLHjpXyvdcM0J27VhBwOdfUPA7dM/edit#gid=0';
+  const TABLE_NAME = 'Notified Students on Mission Table';
   const alertMessage = 'Do you want to notify all students on the MISSION Projects Table that they need to update their row on the table?';
+  let sheet = SpreadsheetApp.openByUrl(URL).getSheetByName(TABLE_NAME);
+  // clears the spreadsheet first
+  clearSheet(sheet);
   let ui = SpreadsheetApp.getUi();
   let result = ui.alert(alertMessage, ui.ButtonSet.YES_NO);
   if (result == ui.Button.YES) {
@@ -133,11 +160,12 @@ function execute(){
      */
      let studentList = getStudents();
      for(let i = 0; i < studentList.length; i++){
-     let id = getUserID(studentList[i][1]);
-     // testing
-     // Logger.log(studentList[i][0]+" "+ id);
-     // uncomment when messaging
-     // sendSlackMessage(id);
+       let name = studentList[i][0];
+       let email = studentList[i][1];
+       let id = getUserID(email);
+       notifiedStudents(name, email, sheet);
+       // testing
+       // sendSlackMessage(id);
     }
    } else {
      ui.alert('Cancelling...');
