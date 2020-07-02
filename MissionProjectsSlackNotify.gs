@@ -83,21 +83,33 @@ function getUserID(email){
  * @param {string} id - the id of the user
  */
 function sendSlackMessage(id){
+  Logger.log(id);
   const URL = "https://slack.com/api/chat.postMessage";
   const AUTH_TOKEN = "xoxb-76088948624-1157537601095-4ZVEg2cXLFAIwMUahvHp36gw"; // Bot's auth token
-  let title = "*MISSION Project Table Update*";
-  let message = "You are receiving this message because you are listed on the MISSION Projects table. \n There has been an update to the columns of the MISSION Projects table. \n Please visit the MISSION Projects Table as soon as possible and make sure that all of your skills and information is updated. \n Your response is essential for us to align your interests with suitable project tasks. \n Thank you for your participation! \n Click here to visit the MISSION Projects Table: https://docs.google.com/spreadsheets/d/1k19sS9NfwlVfG7GCCf18LO69pr4reSOTN6v1lY2nykQ/edit#gid=1165402680";
-  let attach = [{
-    'pretext': '',
-    'text': message
+  const TITLE = "*MISSION Project Table Update Request*\n\n";
+  const LINE1 = "_This is an automated message from Team SUDOKU. Please do not reply to this message!_\n\n";
+  const LINE2 = 'If you have received this message, it indicates that you have not completed your profile in the <https://docs.google.com/spreadsheets/d/1k19sS9NfwlVfG7GCCf18LO69pr4reSOTN6v1lY2nykQ/edit#gid=1165402680|MISSION Projects Table> for two weeks now. As a result, your status at SEAL has been switched to “Yellow”. However, do not fret! Your status can easily be switched back to "Green" if you complete the following steps below:\n\n';
+  const LINE3 = "1. Complete your profile on the MISSION Projects Table within the week.\n";
+  const LINE4 = "2. Find a new project in by performing the following steps:\n";
+  const LINE5 = "\t* Go to the <https://docs.google.com/spreadsheets/d/1MdmQS6o5qsyiVXbCsQ_adcLtj-DNEVGI6P2XEUYp8mM/edit#gid=70116220|Command Center>, then browse through the projects that interest you. Specifically, go to the “Description” tab and read the “People” short term objective (Generally Row 18).\n";
+  const LINE6 = "\t* Contact that project's team leader via Slack to see how you might fit inside this project.\n";
+  const LINE7 = "\t* Once you have been accepted to join the project, you may remove yourself from the MISSION Projects table, unless you wish to continue looking for a new project.\n";
+  const LINE8 = "You can review your status on the MISSION Project Table by looking at the status column by your name. Please see the training program for an explanation of what these warnings mean.\n\n";
+  const LINE9 = "If you believe you have received this message in error, or if you have questions, please contact your team leader, or Christian Lancaster, or Aaron Zielinski via Slack.";
+  const MESSAGE = TITLE.concat(LINE1, LINE2, LINE3, LINE4, LINE5, LINE6, LINE7, LINE8, LINE9);
+  let block = [{
+    "type": "section",
+    "text": {
+      "type": "mrkdwn",
+      "text": MESSAGE
+    }
   }];
-  attach = JSON.stringify(attach);
+  block = JSON.stringify(block);
   let formData = {
     'token': AUTH_TOKEN,
     'channel': id,
-    'text': title,
-    'attachments': attach
-  };
+    'blocks': block
+  }
   let options = {
     'method': 'post',
     'payload': formData
@@ -143,7 +155,7 @@ function notifiedStudents(name, email, sheet){
  * sends messages to the all users on the mission table that have missing columns
  */
 function execute(){
-  const URL = 'https://docs.google.com/spreadsheets/d/1X6xv7s_kebQppKxPLHjpXyvdcM0J27VhBwOdfUPA7dM/edit#gid=0';
+  const URL = 'https://docs.google.com/spreadsheets/d/1a-obhJFmPRRWWFplwGUDTF04doHVcncLp__KNrdbAug/edit#gid=1859985084';
   const TABLE_NAME = 'Notified Students on Mission Table';
   const alertMessage = 'Do you want to notify all students on the MISSION Projects Table that they need to update their row on the table?';
   let sheet = SpreadsheetApp.openByUrl(URL).getSheetByName(TABLE_NAME);
@@ -153,19 +165,13 @@ function execute(){
   let result = ui.alert(alertMessage, ui.ButtonSet.YES_NO);
   if (result == ui.Button.YES) {
      ui.alert('Sending Slack messages to the users now...');
-     // testing
-     /*
-     let id = getUserID("jsw1996@uw.edu");
-     sendSlackMessage(id);
-     */
      let studentList = getStudents();
      for(let i = 0; i < studentList.length; i++){
        let name = studentList[i][0];
        let email = studentList[i][1];
        let id = getUserID(email);
        notifiedStudents(name, email, sheet);
-       // testing
-       // sendSlackMessage(id);
+       sendSlackMessage(id);
     }
    } else {
      ui.alert('Cancelling...');
