@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/src/app/json_to_firestore/node_modules
 /.pnp
 .pnp.js
 
