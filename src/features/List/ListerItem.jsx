@@ -13,7 +13,7 @@ export default function ListerItem({ profile }) {
         as={Link}
         to={`/members/${profile.id}`}
       >
-        <Image src={profile.photoURL} />
+        <Image src={profile.image} style={{width: '960px', height: 'auto'}} />
         <Card.Content content={profile.name}></Card.Content>
       </Card>
     </Grid.Column>

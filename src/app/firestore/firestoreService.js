@@ -21,29 +21,29 @@ export function dataFromSnapshot(snapshot) {
 }
 
 export function listenToProfilesFromFirestore() {
-  return db.collection("profiles").orderBy("name");
+  return db.collection("activeMembers").orderBy("name");
 }
 
 export function listenToProfileFromFirestore(profileId) {
-  return db.collection("profiles").doc(profileId);
+  return db.collection("activeMembers").doc(profileId);
 }
 
 export function addProfileToFirestore(profile) {
-  return db.collection("profiles").add({
+  return db.collection("activeMembers").add({
     ...profile
   });
 }
 
 export function updateProfileInFirestore(profile) {
-  return db.collection("profiles").doc(profile.id).update(profile);
+  return db.collection("activeMembers").doc(profile.id).update(profile);
 }
 
 export function deleteProfileInFirestore(profileId) {
-  return db.collection("profiles").doc(profileId).delete();
+  return db.collection("activeMembers").doc(profileId).delete();
 }
 
 export function cancelProfileToggle(profile) {
-  return db.collection("profiles").doc(profile.id).update({
+  return db.collection("activeMembers").doc(profile.id).update({
     isCancelled: !profile.isCancelled,
   });
 }
