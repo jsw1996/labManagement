@@ -8,7 +8,6 @@ TASKS STILL NOT DONE
 - Filtering through the cards
 - Implementing the social icons for each user for easy contact
 - ?? Messaging system ?? (Maybe)
-- Pagination, Infinite scrolling
 - Better error messages
 - Cleaning up the database
 - Optimizing
