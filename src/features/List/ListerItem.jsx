@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export default function ListerItem({ profile }) {
   return (
-    <Grid.Column>
       <Card
         centered
         link
@@ -16,6 +15,5 @@ export default function ListerItem({ profile }) {
         <Image src={profile.image} style={{width: '960px', height: 'auto'}} />
         <Card.Content content={profile.name}></Card.Content>
       </Card>
-    </Grid.Column>
   );
 }

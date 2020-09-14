@@ -2,7 +2,7 @@ import React from "react";
 import { Segment, Button, Header, Grid, Card } from "semantic-ui-react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
-import { listenToProfiles } from "../profileActions";
+import { listenToSelectedProfile } from "../profileActions";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import MyTextInput from "../../app/common/form/MyTextInput";
@@ -28,13 +28,11 @@ export default function Manager({ match, history }) {
   useFirestoreDoc({
     shouldExecute: !!match.params.id,
     query: () => listenToProfileFromFirestore(match.params.id),
-    data: (profile) => dispatch(listenToProfiles([profile])),
+    data: (profile) => dispatch(listenToSelectedProfile(profile)),
     deps: [match.params.id, dispatch],
   });
 
-  const selectedProfile = useSelector((state) =>
-    state.profile.profiles.find((e) => e.id === match.params.id)
-  );
+  const { selectedProfile } = useSelector((state) => state.profile);
 
   const validationSchema = Yup.object({
     name: Yup.string().required("You must provide a name"),

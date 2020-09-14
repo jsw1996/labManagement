@@ -7,20 +7,18 @@ import UserTable from "./UserTable";
 import { useSelector, useDispatch } from "react-redux";
 import useFirestoreDoc from "../../app/hooks/useFirestoreDoc";
 import { listenToProfileFromFirestore } from "../../app/firestore/firestoreService";
-import { listenToProfiles } from "../profileActions";
+import { listenToSelectedProfile } from "../profileActions";
 import LoadingComponent from "../../app/layout/LoadingComponent";
 import { Redirect } from "react-router-dom";
 
 export default function UserCard({ match }) {
   const dispatch = useDispatch();
-  const profile = useSelector((state) =>
-    state.profile.profiles.find((e) => e.id === match.params.id)
-  );
+  const profile = useSelector((state) => state.profile.selectedProfile);
   const { loading, error } = useSelector((state) => state.async);
 
   useFirestoreDoc({
     query: () => listenToProfileFromFirestore(match.params.id),
-    data: (profile) => dispatch(listenToProfiles([profile])),
+    data: (profile) => dispatch(listenToSelectedProfile(profile)),
     deps: [match.params.id, dispatch],
   });
 

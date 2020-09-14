@@ -3,10 +3,13 @@ import {
   UPDATE_PROFILE,
   DELETE_PROFILE,
   FETCH_PROFILES,
+  LISTEN_TO_SELECTED_PROFILE,
 } from "./profileConstants";
 
 const initialState = {
   profiles: [],
+  moreProfiles: false,
+  selectedProfile: null,
 };
 
 export default function profileReducer(
@@ -35,7 +38,13 @@ export default function profileReducer(
     case FETCH_PROFILES:
       return {
         ...state,
-        profiles: payload
+        profiles: [...state.profiles, ...payload.profiles],
+        moreProfiles: payload.moreProfiles,
+      };
+    case LISTEN_TO_SELECTED_PROFILE:
+      return {
+        ...state,
+        selectedProfile: payload,
       };
     default:
       return state;

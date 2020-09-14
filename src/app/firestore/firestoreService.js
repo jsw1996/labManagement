@@ -20,8 +20,8 @@ export function dataFromSnapshot(snapshot) {
   };
 }
 
-export function listenToProfilesFromFirestore() {
-  return db.collection("activeMembers").orderBy("name");
+export function fetchProfilesFromFirestore(limit, lastDocSnapshot = null) {
+  return db.collection("activeMembers").orderBy("name").startAfter(lastDocSnapshot).limit(limit);
 }
 
 export function listenToProfileFromFirestore(profileId) {
