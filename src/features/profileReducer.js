@@ -38,7 +38,8 @@ export default function profileReducer(
     case FETCH_PROFILES:
       return {
         ...state,
-        profiles: [...state.profiles, ...payload.profiles],
+        profiles: [...payload.profiles],
+        //profiles: [...state.profiles, ...payload.profiles],
         moreProfiles: payload.moreProfiles,
       };
     case LISTEN_TO_SELECTED_PROFILE:

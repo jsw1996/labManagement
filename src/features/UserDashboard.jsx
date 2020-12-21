@@ -12,6 +12,7 @@ export default function UserDashboard() {
   const dispatch = useDispatch();
   const limit = 10;
   const { profiles, moreProfiles } = useSelector((state) => state.profile);
+  console.log(profiles, moreProfiles)
   const { loading } = useSelector((state) => state.async);
   const [lastDocSnapshot, setLastDocSnapshot] = useState(null);
   const [loadingInitial, setLoadingInitial] = useState(false);
@@ -31,12 +32,17 @@ export default function UserDashboard() {
     });
   }
 
-  if (loadingInitial)
+  console.log("profiles")
+
+
+  if (loadingInitial) {
     return (
       <>
         <LoadingComponent />
       </>
     );
+  }
+
 
   return (
     <Grid>
@@ -57,7 +63,9 @@ export default function UserDashboard() {
                   color='olive'
                   as={Link}
                   to={`/members/${profile.id}`}
+                  key={profile.id}
                 >
+
                   <Image
                     src={profile.image}
                     style={{ width: "960px", height: "auto" }}
