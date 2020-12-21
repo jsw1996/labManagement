@@ -12,12 +12,12 @@ const firestore = admin.firestore();
 // const fs = require("fs");
 // const directoryPath = path.join(__dirname, "files");
 
-var file = "slackProfile.json"
+var file = "activeMembers.json";
 var menu = require("./files/" + file);
 
 menu.forEach(function (obj) {
   firestore
-    .collection("test3")
+    .collection("activeMembers")
     .doc()
     .set(obj)
     .then(function (docRef) {

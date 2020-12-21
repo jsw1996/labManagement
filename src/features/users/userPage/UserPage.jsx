@@ -7,11 +7,11 @@ import { getUser } from '../../../app/firestore/firestoreService';
 import { listenToCurrentUser } from './userActions';
 import LoadingComponent from '../../../app/layout/LoadingComponent';
 
-export default function UserProfile({match}) {
+export default function UserProfile({ match }) {
     const dispatch = useDispatch();
-    const {currentUser} = useSelector(state => state.user);
+    const { currentUser } = useSelector(state => state.user);
 
-    const {loading, error} = useSelector(state => state.async);
+    const { loading, error } = useSelector(state => state.async);
 
     useFirestoreDoc({
         query: () => getUser(match.params.id),
@@ -21,10 +21,10 @@ export default function UserProfile({match}) {
 
     if ((loading && !currentUser) || (!currentUser && !error)) return <LoadingComponent content='Loading user...' />
 
-    return(
+    return (
         <Grid>
             <Grid.Column width={16}>
-            <UserHeader user={currentUser} />
+                <UserHeader user={currentUser} />
             </Grid.Column>
         </Grid>
     )

@@ -1,0 +1,560 @@
+[
+    {
+        "name": "Aravind Narayanan",
+        "email": "an00@uw.edu",
+        "slackId": "UNE9DH6KY",
+        "image": "https://avatars.slack-edge.com/2019-09-13/747359701426_63d220d7ab7c30814b34_192.png"
+    },
+    {
+        "name": "SEAL Admin (e)",
+        "email": "sealpro247@gmail.com",
+        "slackId": "URECRPG9W",
+        "image": "https://avatars.slack-edge.com/2020-01-27/923939524388_838a7590825b1e39561a_192.png"
+    },
+    {
+        "name": "Shivam Hingorani",
+        "email": "shivamh@uw.edu",
+        "slackId": "U016ALRJAMN",
+        "image": "https://avatars.slack-edge.com/2020-06-17/1189722080565_8219ea5557959d5531d9_192.jpg"
+    },
+    {
+        "name": "Shiyu Li",
+        "email": "syl19@uw.edu",
+        "slackId": "U018WJ27BD1",
+        "image": "https://avatars.slack-edge.com/2020-08-14/1308599307716_35a80a0a697cff8a68e7_192.jpg"
+    },
+    {
+        "name": "Joe He",
+        "email": "jh846@uw.edu",
+        "slackId": "U2D00S58B",
+        "image": "https://avatars.slack-edge.com/2019-09-28/779153799942_f1afcbc5809c0276634e_192.jpg"
+    },
+    {
+        "name": "Karina Bridgman",
+        "email": "karinab7@uw.edu",
+        "slackId": "UPQUXJ1RC",
+        "image": "https://avatars.slack-edge.com/2019-10-22/804331586340_d39ba86fa7a29fdd8717_192.png"
+    },
+    {
+        "name": "Teagan Buckley",
+        "email": "teaganb@uw.edu",
+        "slackId": "UREJNEWQ3",
+        "image": "https://avatars.slack-edge.com/2019-12-16/863325689794_28c75bf99a3e2a07f670_192.jpg"
+    },
+    {
+        "name": "Diman Todorov",
+        "email": "dimant@uw.edu",
+        "slackId": "UF5TNTHJS",
+        "image": "https://avatars.slack-edge.com/2019-01-01/513804034768_012c714b4aa256a38231_192.jpg"
+    },
+    {
+        "name": "Tyler Persons",
+        "email": "tpersons@uw.edu",
+        "slackId": "U01584DC0CV",
+        "image": "https://avatars.slack-edge.com/2020-07-13/1237880173717_51e026d8b5ba2151b1ae_192.png"
+    },
+    {
+        "name": "Arnav Chawla",
+        "email": "arnavchawla23@gmail.com",
+        "slackId": "U01637Y4W67",
+        "image": "https://secure.gravatar.com/avatar/a0e09d717d694ea47a97091ce096d4b4.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-192.png"
+    },
+    {
+        "name": "Hafsa Abdinur",
+        "email": "hafsaa@uw.edu",
+        "slackId": "U018THR3N3Y",
+        "image": "https://avatars.slack-edge.com/2020-08-25/1323593811187_d14c16b32894e2699c7d_192.png"
+    },
+    {
+        "name": "Morgan Kay Lowell",
+        "email": "morgal4@uw.edu",
+        "slackId": "U015J8LNGRY",
+        "image": "https://avatars.slack-edge.com/2020-06-17/1190068268853_ed9ca2bd14c2c2af218f_192.png"
+    },
+    {
+        "name": "Ashley Cantrell",
+        "email": "cantra2@uw.edu",
+        "slackId": "U012Q31JT8Q",
+        "image": "https://avatars.slack-edge.com/2020-04-16/1092187711024_9bb7ebc7da808dae2c12_192.png"
+    },
+    {
+        "name": "Claire Nikong",
+        "email": "cdnikong@uw.edu",
+        "slackId": "U015NHU35NJ",
+        "image": "https://avatars.slack-edge.com/2020-07-01/1218384811842_9ae411a4e0965f19e89c_192.jpg"
+    },
+    {
+        "name": "Igor Novosselov",
+        "email": "ivn@uw.edu",
+        "slackId": "U9L59K81Y",
+        "image": "https://avatars.slack-edge.com/2018-10-29/468066319142_43cd8f85aeb872a6957d_192.jpg"
+    },
+    {
+        "name": "Yufan Mou",
+        "email": "yufanmou@gmail.com",
+        "slackId": "U016FL5S3PT",
+        "image": "https://avatars.slack-edge.com/2020-06-25/1213327131156_b582d3e3193653b2573b_192.jpg"
+    },
+    {
+        "name": "Mukund Bharadwaj",
+        "email": "mukundbj@uw.edu",
+        "slackId": "USMBA0B9U",
+        "image": "https://avatars.slack-edge.com/2020-01-12/891741324851_a7f959039b1cc054724f_192.jpg"
+    },
+    {
+        "name": "Muminah Amjad",
+        "email": "amjadm@uw.edu",
+        "slackId": "U011K2XGWHF",
+        "image": "https://avatars.slack-edge.com/2020-04-08/1050900571974_82a262424306ca827501_192.jpg"
+    },
+    {
+        "name": "Lakshay Sahni",
+        "email": "sahnil@uw.edu",
+        "slackId": "U019GDS77B8",
+        "image": "https://avatars.slack-edge.com/2020-08-30/1344128820065_2eeb1bfea5f89ba0ee31_192.jpg"
+    },
+    {
+        "name": "Divya Rao",
+        "email": "divyar26@uw.edu",
+        "slackId": "U019RHSPCJW",
+        "image": "https://secure.gravatar.com/avatar/6431fe5b09c67568ecf0afcd903e03d2.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0005-192.png"
+    },
+    {
+        "name": "Jasmine Xu",
+        "email": "xus6@uw.edu",
+        "slackId": "URV5ESD28",
+        "image": "https://avatars.slack-edge.com/2019-12-19/868198097411_4505314102e1ea149f95_192.png"
+    },
+    {
+        "name": "Byron Ockerman",
+        "email": "byro@uw.edu",
+        "slackId": "UP37CR63Z",
+        "image": "https://secure.gravatar.com/avatar/e5870f8243d509a3e7c83368d9805613.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-192.png"
+    },
+    {
+        "name": "Annie Fang",
+        "email": "fangy33@uw.edu",
+        "slackId": "U01154EM6UC",
+        "image": "https://avatars.slack-edge.com/2020-04-02/1045902964022_fb9fc00ec696895486de_192.jpg"
+    },
+    {
+        "name": "Haoran Du",
+        "email": "haorad@uw.edu",
+        "slackId": "U016YATJ4TU",
+        "image": "https://secure.gravatar.com/avatar/2e0aecebf3ad807eeafd15eee6765eee.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-192.png"
+    },
+    {
+        "name": "Edward Wu",
+        "email": "wuchengkai1998@gmail.com",
+        "slackId": "UU4JGF5EH",
+        "image": "https://avatars.slack-edge.com/2020-02-19/960483147504_8a8fdcd2241ddee3811a_192.jpg"
+    },
+    {
+        "name": "Sam Han",
+        "email": "antx0r@uw.edu",
+        "slackId": "U015ES0TK6J",
+        "image": "https://avatars.slack-edge.com/2020-06-22/1212087694689_196d0479249b09cafe49_192.jpg"
+    },
+    {
+        "name": "Andrew Hall",
+        "email": "andreh7@uw.edu",
+        "slackId": "U9X4JNBFV",
+        "image": "https://avatars.slack-edge.com/2019-02-25/561488231335_aeee2e9a0c7d1e916a7e_192.jpg"
+    },
+    {
+        "name": "Surya Mylvahanan",
+        "email": "mylvasur@uw.edu",
+        "slackId": "U015FDAMCDR",
+        "image": "https://avatars.slack-edge.com/2020-06-15/1170638711447_aec60e07e614d4340bd0_192.jpg"
+    },
+    {
+        "name": "Evan Shahkarami",
+        "email": "shahke2@uw.edu",
+        "slackId": "U012KQ6TDEJ",
+        "image": "https://avatars.slack-edge.com/2020-05-16/1134958630580_a8a458d7ffafb040a14c_192.jpg"
+    },
+    {
+        "name": "Kei Hartley",
+        "email": "ckh22@uw.edu",
+        "slackId": "U019RHJFQ66",
+        "image": "https://avatars.slack-edge.com/2020-08-30/1316854092679_dc2f05f46dcf6df20262_192.png"
+    },
+    {
+        "name": "Jonathan Cho",
+        "email": "chojon@uw.edu",
+        "slackId": "U0153RJRLQH",
+        "image": "https://avatars.slack-edge.com/2020-06-12/1188281241476_e551f88f23d4ac16a14a_192.jpg"
+    },
+    {
+        "name": "Jamie Thorup",
+        "email": "jamiethr@uw.edu",
+        "slackId": "U0177KU7FDX",
+        "image": "https://avatars.slack-edge.com/2020-07-11/1259961758992_4713e7499e5c09196487_192.jpg"
+    },
+    {
+        "name": "Akhil Mandala",
+        "email": "amvinnu@uw.edu",
+        "slackId": "U019RK9F35Y",
+        "image": "https://avatars.slack-edge.com/2020-08-29/1324947190678_cc17aeec3b32ec7c07c2_192.jpg"
+    },
+    {
+        "name": "Katelyn Feir",
+        "email": "kmfeir@uw.edu",
+        "slackId": "U015S073Q0K",
+        "image": "https://avatars.slack-edge.com/2020-06-21/1196873919586_9cc8cc758b5eae58deb0_192.jpg"
+    },
+    {
+        "name": "Alexander Mamishev (e)",
+        "email": "mamishev@uw.edu",
+        "slackId": "U282LTWKS",
+        "image": "https://avatars.slack-edge.com/2016-09-13/79321426352_182972ad4e5224cc32ba_192.jpg"
+    },
+    {
+        "name": "Rania Hussein",
+        "email": "rhussein@uw.edu",
+        "slackId": "US30K2ZDF",
+        "image": "https://avatars.slack-edge.com/2020-05-26/1140282435078_2ac8f846df74b069c5fd_192.png"
+    },
+    {
+        "name": "Nikhil Sharma",
+        "email": "nys4@uw.edu",
+        "slackId": "UA8A5HUKH",
+        "image": "https://avatars.slack-edge.com/2018-04-18/350237454326_8c3874269d252c87ed3e_192.png"
+    },
+    {
+        "name": "Adithya Suresh",
+        "email": "adithyas@uw.edu",
+        "slackId": "U018VDS9JBF",
+        "image": "https://secure.gravatar.com/avatar/5cf433cebf6174fb267d75c7547d25b0.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-192.png"
+    },
+    {
+        "name": "Alexis Calma",
+        "email": "calmax@uw.edu",
+        "slackId": "UEZ29PV62",
+        "image": "https://avatars.slack-edge.com/2018-12-19/507075535793_fe4f7a71b9cd7ac33003_192.jpg"
+    },
+    {
+        "name": "Junqi Ye",
+        "email": "jy98@uw.edu",
+        "slackId": "U0118RUCPPX",
+        "image": "https://avatars.slack-edge.com/2020-04-07/1045273098578_267dc2fb969c349c700b_192.jpg"
+    },
+    {
+        "name": "Allyson Tran",
+        "email": "allytran@uw.edu",
+        "slackId": "U01683T3QM6",
+        "image": "https://avatars.slack-edge.com/2020-06-16/1188872830803_82254ce743740c1daac0_192.png"
+    },
+    {
+        "name": "Derek",
+        "email": "jsw1996@uw.edu",
+        "slackId": "U013600MXB9",
+        "image": "https://secure.gravatar.com/avatar/8b6943d2f2d962c1496189c259cce145.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-192.png"
+    },
+    {
+        "name": "Kim Tran",
+        "email": "kimtrankt1012@gmail.com",
+        "slackId": "UNXBRHFT3",
+        "image": "https://avatars.slack-edge.com/2020-04-09/1069725784496_fed18b45bcca54b9ca7d_192.png"
+    },
+    {
+        "name": "Xulei Cheng",
+        "email": "cxl2020@uw.edu",
+        "slackId": "U018ZH1JMHV",
+        "image": "https://avatars.slack-edge.com/2020-08-24/1326730783524_d49542a72fc79fce7172_192.png"
+    },
+    {
+        "name": "Duy Vuong",
+        "email": "duyv@uw.edu",
+        "slackId": "U0119DG3E2C",
+        "image": "https://avatars.slack-edge.com/2020-04-04/1043815331537_0e9c639a06644b6e3126_192.jpg"
+    },
+    {
+        "name": "Anita Silva",
+        "email": "silvaa5@uw.edu",
+        "slackId": "U015Y1V0QKE",
+        "image": "https://avatars.slack-edge.com/2020-06-20/1196522533410_0b0741d024381535edc4_192.png"
+    },
+    {
+        "name": "Zainab Zahra",
+        "email": "szz@uw.edu",
+        "slackId": "U016ALRFK88",
+        "image": "https://avatars.slack-edge.com/2020-06-17/1184248167734_ee8e3de3ae8491ed7fc3_192.png"
+    },
+    {
+        "name": "Sara S Shin",
+        "email": "shinsar@uw.edu",
+        "slackId": "U019NC9B2HG",
+        "image": "https://avatars.slack-edge.com/2020-08-27/1322175214694_72754650b2946aea3d13_192.png"
+    },
+    {
+        "name": "Tianyi Ren",
+        "email": "terryren@uw.edu",
+        "slackId": "U015G9V2RS7",
+        "image": "https://avatars.slack-edge.com/2020-06-16/1181042069670_cb9dc925f02f18844457_192.png"
+    },
+    {
+        "name": "Anthony Tang",
+        "email": "antang98@uw.edu",
+        "slackId": "UCQQHAW6A",
+        "image": "https://avatars.slack-edge.com/2018-09-07/431649126021_95f90e91376f90528fac_192.png"
+    },
+    {
+        "name": "Youfeng Chen",
+        "email": "cyoufeng@uw.edu",
+        "slackId": "U019Q7KRJ1E",
+        "image": "https://secure.gravatar.com/avatar/7ca663ec60d338a7e0d984b34a09650d.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-192.png"
+    },
+    {
+        "name": "Thomas Tusty",
+        "email": "tustythomas@gmail.com",
+        "slackId": "UF3EQU5JQ",
+        "image": "https://avatars.slack-edge.com/2018-12-30/514071091173_fb43cf3219e50829d9a9_192.jpg"
+    },
+    {
+        "name": "Alex Albert",
+        "email": "alex234@uw.edu",
+        "slackId": "U01152THZ8U",
+        "image": "https://avatars.slack-edge.com/2020-04-01/1043367881024_26149f671fcbabb7f64f_192.png"
+    },
+    {
+        "name": "Dylan Rose",
+        "email": "drose98@uw.edu",
+        "slackId": "U9E6B2P18",
+        "image": "https://avatars.slack-edge.com/2018-02-23/319562839056_83e0e0cef4c77b25887c_192.jpg"
+    },
+    {
+        "name": "Shawn Cho",
+        "email": "sycho00@uw.edu",
+        "slackId": "U015RLTE9KL",
+        "image": "https://avatars.slack-edge.com/2020-06-22/1223415270928_c77b9fe644d92081e118_192.png"
+    },
+    {
+        "name": "Fred Chan",
+        "email": "fred2167@uw.edu",
+        "slackId": "U019JR8F8TY",
+        "image": "https://avatars.slack-edge.com/2020-08-29/1344215899409_f381c11b7866d39ce3ce_192.jpg"
+    },
+    {
+        "name": "Varun Chawla",
+        "email": "varunc2@uw.edu",
+        "slackId": "U015QQH9SQZ",
+        "image": "https://avatars.slack-edge.com/2020-06-13/1182729524626_66c255c198df5c8abdef_192.jpg"
+    },
+    {
+        "name": "Lucy Bao",
+        "email": "lybao@uw.edu",
+        "slackId": "U015RL23WF2",
+        "image": "https://secure.gravatar.com/avatar/4b6a7e0883675ef2f1e75d17dd4cfe44.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-192.png"
+    },
+    {
+        "name": "Maddie Sloan",
+        "email": "sloanm4@uw.edu",
+        "slackId": "U011C1NF9ST",
+        "image": "https://avatars.slack-edge.com/2020-04-08/1058857245665_7fc1322b56f6a643c886_192.jpg"
+    },
+    {
+        "name": "Kushagra Kumar",
+        "email": "kush6357@uw.edu",
+        "slackId": "U01579Z7WNS",
+        "image": "https://avatars.slack-edge.com/2020-06-18/1192090886085_06c0877a08685ccf0ded_192.jpg"
+    },
+    {
+        "name": "Simon Cao",
+        "email": "purunc@uw.edu",
+        "slackId": "USLCT49MJ",
+        "image": "https://avatars.slack-edge.com/2020-01-13/892169932866_5ee7fe1723eca0a3aa2f_192.png"
+    },
+    {
+        "name": "Anastasiya Makarevich",
+        "email": "apm481@uw.edu",
+        "slackId": "U010MFCAMFC",
+        "image": "https://avatars.slack-edge.com/2020-04-04/1038242115986_26150c9987cd5c480db7_192.jpg"
+    },
+    {
+        "name": "Nora Morsi",
+        "email": "morsin@uw.edu",
+        "slackId": "U019SF0FX0R",
+        "image": "https://avatars.slack-edge.com/2020-08-25/1329693742228_d3cd96f3b3c024656f2d_192.png"
+    },
+    {
+        "name": "Shahrzad Feghhi",
+        "email": "feghhs@uw.edu",
+        "slackId": "UM76T2LVB",
+        "image": "https://avatars.slack-edge.com/2019-09-25/775380361702_bdc2003d37521a2f01d4_192.png"
+    },
+    {
+        "name": "Vironie Pearl Ederosas",
+        "email": "vironie30@gmail.com",
+        "slackId": "UNNHJDY3S",
+        "image": "https://avatars.slack-edge.com/2020-04-01/1042792800262_aca4bf9e700a8e34b35a_192.jpg"
+    },
+    {
+        "name": "Jared Schwartz",
+        "email": "jared800@uw.edu",
+        "slackId": "U015X2BTH5X",
+        "image": "https://avatars.slack-edge.com/2020-06-16/1181767153590_b468c7d4db8fd6f3c25f_192.jpg"
+    },
+    {
+        "name": "Tess Despres",
+        "email": "tdespres@uw.edu",
+        "slackId": "U014H3TLQP7",
+        "image": "https://avatars.slack-edge.com/2020-05-29/1178382896592_18f6e821643a15cd5f9c_192.jpg"
+    },
+    {
+        "name": "Corey Cochran-Lepiz",
+        "email": "Corey.CochranLepiz@gmail.com",
+        "slackId": "U018HQTFNRX",
+        "image": "https://avatars.slack-edge.com/2020-08-02/1277324266914_3a1849f30db7f8b3ce68_192.jpg"
+    },
+    {
+        "name": "Chase Deitner",
+        "email": "cdeitner@uw.edu",
+        "slackId": "USNT9QMB7",
+        "image": "https://avatars.slack-edge.com/2020-01-15/896598728499_0029d2dddcef7ccbc4de_192.jpg"
+    },
+    {
+        "name": "Abbie Sawyer",
+        "email": "abbies2@uw.edu",
+        "slackId": "U010TSXM1CK",
+        "image": "https://avatars.slack-edge.com/2020-04-06/1046725315217_c36425cec12d0f79c0e7_192.jpg"
+    },
+    {
+        "name": "Sep Makhsous",
+        "email": "sosper30@uw.edu",
+        "slackId": "U28U65SMU",
+        "image": "https://avatars.slack-edge.com/2016-09-11/78519624053_7b6e56c6ece28c090111_192.jpg"
+    },
+    {
+        "name": "Quila Welch",
+        "email": "quilaw@uw.edu",
+        "slackId": "U015GSVSKT7",
+        "image": "https://avatars.slack-edge.com/2020-06-20/1196509567235_7cb392f6e8c9b93d3a7a_192.jpg"
+    },
+    {
+        "name": "Sandra Li",
+        "email": "sli713@uw.edu",
+        "slackId": "UDQ257C6N",
+        "image": "https://avatars.slack-edge.com/2018-10-31/469108231747_949d0522d5cec0dbc04d_192.jpg"
+    },
+    {
+        "name": "Serag Sorror",
+        "email": "serags@uw.edu",
+        "slackId": "U0121FZFATS",
+        "image": "https://avatars.slack-edge.com/2020-04-11/1063870158628_95ed88c737fe2fb0adda_192.jpg"
+    },
+    {
+        "name": "Max Wood",
+        "email": "mew53@uw.edu",
+        "slackId": "U016ZN0HTLH",
+        "image": "https://avatars.slack-edge.com/2020-07-08/1243398003185_ab7de3c23f02a438c09f_192.png"
+    },
+    {
+        "name": "Nishtha Agarwal",
+        "email": "nishtha1@uw.edu",
+        "slackId": "U015YS97YBE",
+        "image": "https://avatars.slack-edge.com/2020-06-21/1202897636612_776986efbd5da7ec71cd_192.jpg"
+    },
+    {
+        "name": "Jeff Thomas",
+        "email": "thomasj1@uw.edu",
+        "slackId": "U73US92NN",
+        "image": "https://avatars.slack-edge.com/2017-09-15/242955255286_ba7f2e496cf3dec20202_192.jpg"
+    },
+    {
+        "name": "Aaron Zielinski",
+        "email": "zamz@uw.edu",
+        "slackId": "U28RLH2LE",
+        "image": "https://avatars.slack-edge.com/2019-02-25/560048809969_60aa233784193422a5e4_192.png"
+    },
+    {
+        "name": "Christian Lancaster (e)",
+        "email": "chrisl47@uw.edu",
+        "slackId": "UNNAA9XCJ",
+        "image": "https://avatars.slack-edge.com/2019-12-07/864172996245_f86fc267c7a26d07975c_192.jpg"
+    },
+    {
+        "name": "Stella Lau (she/her)",
+        "email": "stellau@uw.edu",
+        "slackId": "UHBJ4AL2Z",
+        "image": "https://avatars.slack-edge.com/2019-03-26/586878360816_f759e8f09a60d40c79f8_192.jpg"
+    },
+    {
+        "name": "Ploypilin Pruekcharoen",
+        "email": "ploypp@uw.edu",
+        "slackId": "U016SSDSU48",
+        "image": "https://avatars.slack-edge.com/2020-08-16/1310124777124_d7bfdc946ce549158c19_192.png"
+    },
+    {
+        "name": "Richard Wang",
+        "email": "rrwang@uw.edu",
+        "slackId": "UF993BE9J",
+        "image": "https://avatars.slack-edge.com/2020-05-19/1119599208279_8efc8e34fdea8c12c0d5_192.jpg"
+    },
+    {
+        "name": "Vandhana Prabhakaran",
+        "email": "vandhp@uw.edu",
+        "slackId": "U019F56DACW",
+        "image": "https://secure.gravatar.com/avatar/418093c3966972a2ac8424f3b0b193b4.jpg?s=192&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-192.png"
+    },
+    {
+        "name": "Brandon Haotian Liu",
+        "email": "bhl00@uw.edu",
+        "slackId": "U015RRZ72PL",
+        "image": "https://avatars.slack-edge.com/2020-06-20/1195956273826_08eb161b33c4584ceeec_192.jpg"
+    },
+    {
+        "name": "Pengyu Yang",
+        "email": "yangp8@uw.edu",
+        "slackId": "U0118KANLHJ",
+        "image": "https://avatars.slack-edge.com/2020-04-07/1046372872419_1c63878ed16eb27ffbaa_192.jpg"
+    },
+    {
+        "name": "Heran Wang",
+        "email": "hw99@uw.edu",
+        "slackId": "UQQJZ3525",
+        "image": "https://avatars.slack-edge.com/2019-12-16/876973101990_fb296c7e58659878293f_192.jpg"
+    },
+    {
+        "name": "JASON LI",
+        "email": "lzw365@uw.edu",
+        "slackId": "U01APRQP6GG",
+        "image": "https://avatars.slack-edge.com/2020-09-02/1340035301922_f4adaccfbc1e1bc9ec30_192.png"
+    },
+    {
+        "name": "Eric Jeong",
+        "email": "ejeong5@uw.edu",
+        "slackId": "U011N7E37SN",
+        "image": "https://avatars.slack-edge.com/2020-06-25/1207143221298_9229e377cdcf70ba1e88_192.png"
+    },
+    {
+        "name": "Jaime Brown",
+        "email": "jbrown11@uw.edu",
+        "slackId": "U014U4AL86T",
+        "image": "https://avatars.slack-edge.com/2020-06-15/1185950274146_0e76122c5003eea77ff6_192.png"
+    },
+    {
+        "name": "Ravi Sankar Vaddi",
+        "email": "raviv@uw.edu",
+        "slackId": "U2A87PDHA",
+        "image": "https://avatars.slack-edge.com/2017-10-17/257417654581_8dd6409d8c11827ec304_192.jpg"
+    },
+    {
+        "name": "Kevin Cai",
+        "email": "caik@uw.edu",
+        "slackId": "U010W8Z603U",
+        "image": "https://avatars.slack-edge.com/2020-04-01/1030633744450_113e515088cf134d879e_192.jpg"
+    },
+    {
+        "name": "Ethan Yee",
+        "email": "yeethan@uw.edu",
+        "slackId": "U01ABLHSS8G",
+        "image": "https://avatars.slack-edge.com/2020-09-02/1337211116021_aa4fb4906c1947b72974_192.png"
+    },
+    {
+        "name": "Zixin Huang",
+        "email": "zh37@uw.edu",
+        "slackId": "USH099U2K",
+        "image": "https://avatars.slack-edge.com/2020-01-08/899169127701_4a1b052780cd5f653eb5_192.png"
+    }
+]
