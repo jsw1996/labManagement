@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function UserDashboard() {
   const dispatch = useDispatch();
-  const limit = 10;
+  const limit = 100;
   const { profiles, moreProfiles } = useSelector((state) => state.profile);
   console.log(profiles, moreProfiles)
   const { loading } = useSelector((state) => state.async);

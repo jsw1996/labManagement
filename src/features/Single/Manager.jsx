@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Segment, Button, Header, Grid, Card } from "semantic-ui-react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import { listenToSelectedProfile } from "../profileActions";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
+import MyImageInput from "../../app/common/form/MyImageInput";
 import MyTextInput from "../../app/common/form/MyTextInput";
 import MyTextArea from "../../app/common/form/MyTextArea";
 import MySelectInput from "../../app/common/form/MySelectInput";
@@ -17,10 +18,20 @@ import {
   updateProfileInFirestore,
   addProfileToFirestore,
 } from "../../app/firestore/firestoreService";
+import { storage } from "../../app/config/firebase";
+import 'firebase/storage'
 import LoadingComponent from "../../app/layout/LoadingComponent";
 import { toast } from "react-toastify";
+import ImageUploader from 'react-images-upload';
+import "../../app/layout/style.css";
+import uploadImage from "../../app/firebase_storage/upload_to_cloud";
+
+
 
 export default function Manager({ match, history }) {
+  const [file, setFile] = useState(null);
+  const [url, setURL] = useState("");
+
   const dispatch = useDispatch();
 
   const { loading, error } = useSelector((state) => state.async);
@@ -33,6 +44,10 @@ export default function Manager({ match, history }) {
   });
 
   const { selectedProfile } = useSelector((state) => state.profile);
+
+  function imageCallback(imageFile) {
+    setFile(imageFile);
+  }
 
   const validationSchema = Yup.object({
     name: Yup.string().required("You must provide a name"),
@@ -70,7 +85,9 @@ export default function Manager({ match, history }) {
             selectedProfile
               ? await updateProfileInFirestore(values)
               : await addProfileToFirestore(values);
+            uploadImage(file, setFile, setURL);
             setSubmitting(false);
+
             history.push("/members");
           } catch (error) {
             toast.error(error.message);
@@ -86,6 +103,16 @@ export default function Manager({ match, history }) {
                   <Card.Content>
                     <Header sub color='violet' content='Edit Details' />
                     <MyTextInput name='name' placeholder='Name' />
+                    {/* <ImageUploader
+                      id='photo'
+                      style={{ border: '1px solid Gainsboro', borderRadius: '4px', marginBottom: '0' }}
+                      withIcon={true}
+                      buttonText='upload profile iamge'
+                      // onChange={this.onDrop}
+                      imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                      maxFileSize={5242880}
+                    /> */}
+                    <MyImageInput callback={imageCallback} />
                     <MyTextInput name='teamLeader' placeholder='Team Leader' />
                     <MyTextInput name='position' placeholder='Position' />
                   </Card.Content>
@@ -151,6 +178,6 @@ export default function Manager({ match, history }) {
           </Form>
         )}
       </Formik>
-    </Segment>
+    </Segment >
   );
 }

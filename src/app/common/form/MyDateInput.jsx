@@ -6,7 +6,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 export default function MyDateInput({ label, ...props }) {
   const [field, meta] = useField(props);
-  const {setFieldValue} = useFormikContext() 
+  const { setFieldValue } = useFormikContext()
+
+
   return (
     <FormField error={meta.touched && !!meta.error}>
       <label>{label}</label>
